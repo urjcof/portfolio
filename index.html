@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo Lemarchand — Portfolio BTS SIO SLAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="feu.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ─── Navigation ────────────────────────────────────────────── -->
+    <nav>
+        <span class="nav-logo">Leo<span>.</span></span>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="veille.html">Veille technologique</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ─── Hero ──────────────────────────────────────────────────── -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">BTS SIO · Option SLAM · 2ème année</div>
+            <h1 class="hero-name reveal reveal-delay-1">Leo<br>Lemarchand</h1>
+            <p class="hero-title reveal reveal-delay-2">Étudiant développeur <strong>logiciel & applications</strong>
+            </p>
+            <p class="hero-desc reveal reveal-delay-3">
+                Passionné par le développement, je suis en 2ème année de BTS SIO SLAM à St Jo SUP au Havre.
+            </p>
+            <div class="hero-cta reveal reveal-delay-4">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-2">
+            <div class="hero-avatar">LL</div>
+            <div class="hero-stat-cards">
+                <div class="stat-card">
+                    <strong>10+</strong> langages
+                </div>
+                <div class="stat-card">
+                    <strong>Le Havre</strong> St Jo SUP
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Projets ───────────────────────────────────────────────── -->
+    <div id="projets">
+        <div class="inner">
+            <p class="section-label reveal">Réalisations</p>
+            <h2 class="section-title reveal">Mes projets</h2>
+            <p class="section-sub reveal">Projets réalisés dans le cadre du BTS SIO, en stage ou à titre personnel.</p>
+
+            <div class="projects-grid">
+
+                <!-- Projet 1 : BOOKBOXD -->
+                <div class="project-card reveal">
+                    <div class="project-icon">📚</div>
+                    <span class="project-badge badge-perso">Personnel · E6</span>
+                    <h3 class="project-name">BOOKBOXD</h3>
+                    <p class="project-desc">
+                        Application web de catalogue de bibliothèque inspirée de Letterboxd. 30 livres classiques
+                        organisés en carrousels, recherche en temps réel, système de favoris (localStorage + API),
+                        authentification complète avec sessions sécurisées.
+                    </p>
+                    <div class="project-detail-list">
+                        <div class="project-detail">
+                            <span class="detail-label">Architecture</span>
+                            <span>Client-serveur · React 19 + Node.js/Express · API REST</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">BDD</span>
+                            <span>MySQL · 5 tables (books, copies, categories, users, favorites)</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React 19</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">bcrypt</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : Messagerie Android -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-icon">💬</div>
+                    <span class="project-badge badge-e5">Personnel · E6</span>
+                    <h3 class="project-name">Messagerie instantanée Android</h3>
+                    <p class="project-desc">
+                        Application Android de messagerie en temps réel avec backend Python. Inscription, connexion
+                        sécurisée, liste de conversations avec rafraîchissement auto, chat via WebSocket et regroupement
+                        visuel des messages par minute.
+                    </p>
+                    <div class="project-detail-list">
+                        <div class="project-detail">
+                            <span class="detail-label">Architecture</span>
+                            <span>MVVM · FastAPI + SQLAlchemy · Retrofit + OkHttp</span>
+                        </div>
+                        <div class="project-detail">
+                            <span class="detail-label">BDD</span>
+                            <span>MySQL · 3 tables (users, conversations, messages)</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Kotlin 2.0</span>
+                        <span class="tag">Jetpack Compose</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">WebSocket</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQLAlchemy</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── Compétences ───────────────────────────────────────────── -->
+    <section id="competences">
+        <p class="section-label reveal">Technologies</p>
+        <h2 class="section-title reveal">Compétences</h2>
+        <p class="section-sub reveal">Langages, frameworks et méthodes acquis durant ma formation.</p>
+
+        <div class="skills-container">
+
+            <div class="skill-group reveal">
+                <div class="skill-group-title">Langages</div>
+                <div class="skill-pills">
+                    <span class="skill-pill main">SQL</span>
+                    <span class="skill-pill main">C#</span>
+                    <span class="skill-pill main">Python</span>
+                    <span class="skill-pill">PHP</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Kotlin</span>
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">React</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal reveal-delay-1">
+                <div class="skill-group-title">Frameworks & outils</div>
+                <div class="skill-pills">
+                    <span class="skill-pill main">PhpMyAdmin</span>
+                    <span class="skill-pill main">VS Code</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">GitHub</span>
+                    <span class="skill-pill">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal reveal-delay-2">
+                <div class="skill-group-title">Méthodes</div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Merise</span>
+                    <span class="skill-pill">UML</span>
+                    <span class="skill-pill">Méthode agile</span>
+                    <span class="skill-pill">Veille techno.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ─── Documents ───────────────────────────────────────────────── -->
+    <div id="documents">
+        <div class="inner">
+            <p class="section-label reveal">Ressources</p>
+            <h2 class="section-title reveal">Documents</h2>
+            <p class="section-sub reveal">Mon CV et mes rapports de projet — cliquez pour consulter directement dans le
+                navigateur.</p>
+
+            <div class="docs-grid">
+
+                <!-- CV -->
+                <div class="doc-card reveal">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📄</div>
+                        <div>
+                            <div class="doc-type">CV</div>
+                            <div class="doc-name">Curriculum Vitae</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">Mon CV complet : formation, compétences, expériences et projets. À jour pour ma
+                        recherche de stage.</p>
+                    <button class="doc-btn" onclick="openDoc('CV')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <!-- Rapport BOOKBOXD -->
+                <div class="doc-card reveal reveal-delay-1">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📚</div>
+                        <div>
+                            <div class="doc-type">Rapport E6</div>
+                            <div class="doc-name">Fiche E6 — BOOKBOXD</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">Fiche de réalisation professionnelle de l'application BOOKBOXD (catalogue
+                        bibliothèque web, React + Node.js + MySQL).</p>
+                    <button class="doc-btn" onclick="openDoc('bookboxd')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <!-- Rapport Messagerie -->
+                <div class="doc-card reveal reveal-delay-2">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">💬</div>
+                        <div>
+                            <div class="doc-type">Rapport E6</div>
+                            <div class="doc-name">Fiche E6 — Messagerie Android</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">Fiche de réalisation professionnelle de l'application de messagerie instantanée
+                        Android (Kotlin + FastAPI + MySQL).</p>
+                    <button class="doc-btn" onclick="openDoc('messagerie')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <div class="doc-card reveal reveal-delay-2">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📄</div>
+                        <div>
+                            <div class="doc-type">Rapport de stage</div>
+                            <div class="doc-name">Stage 1ère année BTS</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">
+                        Rapport de stage de première année de BTS SIO présentant les missions réalisées et les
+                        compétences acquises.
+                    </p>
+                    <button class="doc-btn" onclick="openDoc('rapport_stage_sio1')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <div class="doc-card reveal reveal-delay-2">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📄</div>
+                        <div>
+                            <div class="doc-type">Rapport de stage</div>
+                            <div class="doc-name">Stage 2ème année BTS</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">
+                        Rapport de stage de deuxième année de BTS SIO détaillant les projets réalisés et les compétences
+                        professionnelles développées.
+                    </p>
+                    <button class="doc-btn" onclick="openDoc('rapport_stage_sio2')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <div class="doc-card reveal reveal-delay-2">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📄</div>
+                        <div>
+                            <div class="doc-type">Attestation de stage</div>
+                            <div class="doc-name">Attestation de stage 1ère année BTS</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">
+                        Attestation de stage de première année de BTS SIO confirmant la réalisation d'un stage en entreprise
+                        et les compétences développées.
+                    </p>
+                    <button class="doc-btn" onclick="openDoc('attestation_stage_sio1')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+                <div class="doc-card reveal reveal-delay-2">
+                    <div class="doc-icon-row">
+                        <div class="doc-icon">📄</div>
+                        <div>
+                            <div class="doc-type">Attestation de stage</div>
+                            <div class="doc-name">Attestation de stage 2ème année BTS</div>
+                        </div>
+                    </div>
+                    <p class="doc-info">
+                        Attestation de stage de deuxième année de BTS SIO confirmant la réalisation d'un stage en entreprise
+                        et les compétences développées.
+                    </p>
+                    <button class="doc-btn" onclick="openDoc('attestation_stage_sio2')">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Consulter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── À propos ──────────────────────────────────────────────── -->
+    <div id="about">
+        <div class="inner">
+            <p class="section-label reveal">Parcours</p>
+            <h2 class="section-title reveal">À propos</h2>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Je m'appelle <strong>Leo Lemarchand</strong>, étudiant en <strong>2ème année de BTS SIO option
+                            SLAM</strong>
+                        à St Jo SUP au Havre. Je me suis orienté vers le développement logiciel par passion pour la
+                        création d'applications et la résolution de problèmes techniques.
+                    </p>
+                    <p>
+                        Durant ma formation, j'ai eu l'occasion de travailler sur des projets variés, en équipe comme
+                        en autonomie, et de me familiariser avec de nombreux langages et outils du secteur.
+                    </p>
+                </div>
+
+                <div class="about-facts reveal reveal-delay-1">
+                    <div class="fact-card">
+                        <span class="fact-icon">🎓</span>
+                        <div>
+                            <div class="fact-label">Formation</div>
+                            <div class="fact-value">BTS SIO SLAM — 2ème année</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">🏫</span>
+                        <div>
+                            <div class="fact-label">Établissement</div>
+                            <div class="fact-value">St Jo SUP, Le Havre</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">📍</span>
+                        <div>
+                            <div class="fact-label">Localisation</div>
+                            <div class="fact-value">Le Havre, Normandie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── Contact ───────────────────────────────────────────────── -->
+    <section id="contact">
+        <div class="contact-wrapper">
+            <p class="section-label reveal">Contact</p>
+            <h2 class="section-title reveal">Travaillons ensemble</h2>
+            <p class="section-sub reveal" style="margin: 0 auto 0;">
+                Je suis disponible. N'hésitez pas à me contacter par email ou sur les réseaux.
+            </p>
+
+            <div class="contact-links reveal reveal-delay-1">
+
+                <!-- Email -->
+                <a href="mailto:leolemarchand0409@email.com" class="contact-link">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    Email
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/urjcof" target="_blank" rel="noopener" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    GitHub
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/leo-lemarchand-34289b349" target="_blank" rel="noopener"
+                    class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    LinkedIn
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Footer ────────────────────────────────────────────────── -->
+    <footer>
+        <p>© 2025 Leo Lemarchand · BTS SIO SLAM · St Jo SUP, Le Havre</p>
+    </footer>
+
+    <!-- ─── JavaScript ────────────────────────────────────────────── -->
+    <script>
+        /* --- Ouverture des documents dans un nouvel onglet --- */
+        const docPaths = {
+            'CV': 'CV_LEO_LEMARCHAND.pdf',
+            'bookboxd': 'rapport-bookboxd.pdf',
+            'messagerie': 'rapport-messagerie.pdf',
+            'rapport_stage_sio1': 'rapport_stage_sio_1.pdf',
+            'rapport_stage_sio2': 'rapport_de_stage_sio_2.pdf',
+            'attestation_stage_sio2': 'attestationsio2leoboss.pdf',
+            'attestation_stage_sio1' : 'attestationstageleolemarchandsio1reel.pdf'
+        };
+
+        function openDoc(key) {
+            const path = docPaths[key];
+            if (!path) return;
+            /* window.open avec target=_blank ouvre dans un nouvel onglet sans téléchargement */
+            window.open(path, '_blank', 'noopener');
+        }
+
+        /* --- Hamburger menu --- */
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        /* Fermer le menu au clic sur un lien */
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+
+        /* --- IntersectionObserver : reveal au scroll --- */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); /* une seule fois */
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        /* Déclencher immédiatement les éléments déjà visibles (hero) */
+        document.querySelectorAll('#hero .reveal').forEach(el => {
+            el.classList.add('visible');
+        });
+    </script>
+
+</body>
+
+</html>
